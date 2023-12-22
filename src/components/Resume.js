@@ -1,15 +1,7 @@
-import React, {useState} from "react";
-import { motion } from "framer-motion";
+import React from "react";
+import { color, motion } from "framer-motion";
 
 export const Resume = ({ data }) => {
-  const getRandomColor = () => {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  };
 
   if (!data) return null;
 
@@ -62,9 +54,9 @@ export const Resume = ({ data }) => {
       variants={fadeIn}
       transition={{ duration: 1 }}
     >
-      <h3><a href={certification.link}>{certification.name}</a></h3>
+      <h3>{certification.name}</h3>
       <p className="info">
-        <span>Issued On: </span><span>{certification.issuedOn}</span>
+        <span>Issued On: </span><span>{certification.issuedOn}</span> - <a href={certification.link}>view</a>
       </p>
       <p>{work.description}</p>
     </motion.div>
@@ -78,9 +70,9 @@ export const Resume = ({ data }) => {
       variants={fadeIn}
       transition={{ duration: 1 }}
     >
-      <h3><a href={publication.link}>{publication.name}</a></h3>
+      <h3>{publication.name}</h3>
       <p className="info">
-        <span>Published On: </span><span>{publication.issuedOn}</span>
+        <span>Published On: </span><span>{publication.issuedOn}</span> - <a href={publication.link}>view</a>
       </p>
       <p>{work.description}</p>
     </motion.div>
@@ -113,6 +105,7 @@ export const Resume = ({ data }) => {
           <h1>
             <span>Skills</span>
           </h1>
+          
         </div>
 
         <div className="nine columns main-col">
@@ -120,7 +113,10 @@ export const Resume = ({ data }) => {
           
           <div className="bars">
             <ul className="skills">{skills}</ul>
+            <Tag data={data.skillsList} />
+
           </div>
+
         </div>
       </div>
 
@@ -146,7 +142,7 @@ export const Resume = ({ data }) => {
         </div>
       </div>
 
-      <div className="row work">
+      <div className="row certification">
         <div className="three columns header-col">
           <h1>
             <span>Certifications</span>
@@ -156,7 +152,7 @@ export const Resume = ({ data }) => {
         <div className="nine columns main-col">{certification}</div>
       </div>
 
-      <div className="row work">
+      <div className="row publications">
         <div className="three columns header-col">
           <h1>
             <span>Publications</span>
@@ -170,21 +166,18 @@ export const Resume = ({ data }) => {
   );
 };
 
-
-const Button = () =>{
+const Tag = ({data}) =>{
   return (
     <div className="container-skill">
-      <div className="tag-skill">
-        <div className="skill-progress">
-          Design
-        </div>
-      </div>
-      <div className="tag-skill">Marketing</div>
-      <div className="tag-skill">User research</div>
-      <div className="tag-skill">Software development</div>
-      <div className="tag-skill">Product management</div>
-      <div className="tag-skill">Student or educator</div>
-      <div className="tag-skill">Other</div>
+      {
+      data.map((skill) =>{
+        return(
+          <div key={skill} className="tag-skill">
+              {skill}
+          </div>
+        );
+      })
+      }
     </div>
   );
 }

@@ -8,11 +8,26 @@ export const Header = ({ data }) => {
 
   const { linkedIn, github, name, description } = data;
 
+  const config = {
+    num: [4, 7],
+    rps: 0.1,
+    radius: [5, 40],
+    life: [1.5, 3],
+    v: [2, 3],
+    tha: [-40, 40],
+    alpha: [0.6, 0],
+    scale: [.1, 0.4],
+    position: "all",
+    color: ["#ffffff"],
+    cross: "dead",
+    random: 15
+  };
+
   return (
     <header id="home">
 
-      {/* <ParticlesBg type="lines" bg={true} /> */}
-
+      {/* <ParticlesBg type="snow" num={50} color="#fff" bg={true} /> */}
+      <ParticlesBg type="custom" config={config} bg={true} />
       <nav id="nav-wrap">
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation

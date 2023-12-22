@@ -95,7 +95,7 @@
         "level":"65%"
       }
     ],
-    "skillsList":[],
+    "skillsList":["JavaScript", "MongoDB", "Pandas", "Scikit-learn", "Matplotlib", "TensorFlow", "BeautifulSoup", "Statistical Analysis", "Data Modeling", "Clustering", "Problem Solving", "Debugging", "Unit Testing", "Git", "Django", "Flask", "React", "React Native", "Laravel", "Spring Boot"],
     "certifications": [
       {
         "name": "Azure Data Fundamentals",
