@@ -114,14 +114,6 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #0762f9; }
 
-/* #home {
-   background-image: url('../images/background.gif');
-   background-size: cover; /* Adjust to your desired background size */
-   background-repeat: no-repeat;
-   /* Other background properties like background-position, background-color, etc. */
-   /* You can also set styles for your content within the container */
-} */
-
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
