@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Anshul/static/css/main.31d6cfe0.css",
+    "main.js": "/Anshul/static/js/main.76a9642d.js",
+    "static/js/787.c922dae8.chunk.js": "/Anshul/static/js/787.c922dae8.chunk.js",
+    "index.html": "/Anshul/index.html",
+    "main.76a9642d.js.map": "/Anshul/static/js/main.76a9642d.js.map",
+    "787.c922dae8.chunk.js.map": "/Anshul/static/js/787.c922dae8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.76a9642d.js"
+  ]
+}

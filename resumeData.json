@@ -1,0 +1,119 @@
+{
+  "main": {
+    "name":"Anshul Chaudhary",
+    "description":"Welcome to my website, where innovative software engineering meets cutting-edge data science",
+    "image":"profilepic.jpeg",
+    "bio":"Hello, I'm Anshul Chaudhary, a passionate and experienced software engineer with a keen interest in data science and machine learning. My journey in the tech industry spans across diverse roles and projects, where I've developed a deep understanding of programming languages, database management, and algorithm design. I thrive on challenges and am constantly seeking new opportunities to apply my skills in optimizing processes, developing innovative solutions, and leading teams towards success. With a commitment to continuous learning and growth, I aim to contribute meaningfully to the tech community and drive forward the boundaries of what's possible with technology.",
+    "contactmessage":"Please fill the details below and I'll contact you ASAP!",
+    "email": "chaudhary.ans@northeastern.edu",
+    "phone": "(857) 318-9725",
+    "github":"https://github.com/ChaudharyAnshul",
+    "linkedIn":"https://www.linkedin.com/in/chaudharyanshul/",
+    "address":{
+      "street":"Boston",
+      "city":"MA",
+      "state":"USA",
+      "zip": ""
+    },
+    "website": "http://www.timbakerdev.com",
+    "resumedownload":"http://timbakerdev.com",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/chaudharyanshul/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"https://www.instagram.com/anshul_218/",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/ChaudharyAnshul",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"As a software engineer with a deep-rooted passion for technology and data science, I have honed a diverse array of skills that enable me to thrive in fast-paced, innovative environments. My expertise, rooted in a blend of programming, Data Base  and Machine learning, drives my approach to solving complex challenges with efficiency and creativity.",
+    "education":[
+      {
+        "school":"Northeastern University, USA",
+        "degree":"Master of Science, Software Engineering Systems",
+        "graduated":"May 2025",
+        "gpa": "4.0",
+        "description":"This program encompassed a range of subjects including advanced software engineering principles, design patterns, and data science methodologies, providing the skills necessary to address intricate software systems and data-related tasks."
+      },
+      {
+        "school":"University of Mumbai, India",
+        "degree":"Bachelor of Engineering, Information Technology",
+        "graduated":"March 2013",
+        "gpa": "3.58",
+        "description":"The program provided a strong foundation in fundamental IT concepts, including algorithmic thinking, database management, and software principles."
+      }
+    ],
+    "work":[
+      {
+        "company":"JPMorgan Chase & Co.",
+        "title":"Software Engineer",
+        "years":"July 2021 - July 2023",
+        "description":"Played a key role in a team at JPMorgan Chase & Co. to modernize legacy systems, enhancing high-speed booking processes and leading Python workflow redesign to boost operational efficiency by 80%. Developed a GraphQL API to cut booking execution time by 66%, onboarded and trained four team members, and resolved critical booking system issues, demonstrating expertise as a subject matter expert in two strategic platform tools."
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"90%"
+      },
+      {
+        "name":"Java",
+        "level":"85%"
+      },
+      {
+        "name":"SQL",
+        "level":"80%"
+      },
+      {
+        "name":"Machine Learning",
+        "level":"85%"
+      },
+      {
+        "name":"Feature Engineering",
+        "level":"80%"
+      },
+      {
+        "name":"Data Structures & Algorithms",
+        "level":"80%"
+      },
+      {
+        "name":"Power Bi",
+        "level":"70%"
+      },
+      {
+        "name":"Apache Airflow",
+        "level":"65%"
+      }
+    ],
+    "skillsList":["JavaScript", "MongoDB", "Pandas", "Scikit-learn", "Matplotlib", "TensorFlow", "BeautifulSoup", "Statistical Analysis", "Data Modeling", "Clustering", "Problem Solving", "Debugging", "Unit Testing", "Git", "Django", "Flask", "React", "React Native", "Laravel", "Spring Boot"],
+    "certifications": [
+      {
+        "name": "Azure Data Fundamentals",
+        "issuedOn": "May 2023",
+        "link": "https://www.credly.com/badges/6a48d1f2-ac6e-4d2a-b965-4c0e7d473420"
+      },
+      {
+        "name": "Azure AI Fundamentals",
+        "issuedOn": "May 2023",
+        "link": "https://www.credly.com/badges/b099ff11-31c8-41d9-bc06-7057272a1dc4"
+      }
+    ],
+    "publications": [
+      {
+        "name": "Detecting Malware, Malicious URLs and Virus Using Machine Learning and Signature Matching",
+        "issuedOn": "June 2021",
+        "link": "https://ieeexplore.ieee.org/document/9456440"
+      }
+    ]
+  }
+}
