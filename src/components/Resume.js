@@ -53,7 +53,9 @@ export const Resume = ({ data }) => {
         {work.title}
         <span>&bull;</span> <em className="date">{work.years}</em>
       </p>
-      <p>{work.description}</p>
+      {work.description.map((workItem, index) => (
+        <div key={index}>{workItem}</div>
+      ))}
     </motion.div>
   ));
 
@@ -67,7 +69,7 @@ export const Resume = ({ data }) => {
     >
       <h3>{certification.name}</h3>
       <p className="info">
-        <span>Issued On: </span><span>{certification.issuedOn}</span> - <a href={certification.link}>view</a>
+        <span>Issued On: </span><span>{certification.issuedOn}</span> - <a href={certification.link} target="_blank">view</a>
       </p>
       <p>{work.description}</p>
     </motion.div>
@@ -83,7 +85,7 @@ export const Resume = ({ data }) => {
     >
       <h3>{publication.name}</h3>
       <p className="info">
-        <span>Published On: </span><span>{publication.issuedOn}</span> - <a href={publication.link}>view</a>
+        <span>Published On: </span><span>{publication.issuedOn}</span> - <a href={publication.link} target="_blank">view</a>
       </p>
       <p>{work.description}</p>
     </motion.div>

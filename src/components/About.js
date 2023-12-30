@@ -32,8 +32,7 @@ export const About = ({ data }) => {
           </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
-            <p>{bio1}</p>
-            <p>{bio2}</p>
+            <p><div>{bio1}</div><div>{bio2}</div></p>
             <div className="row">
               <div className="columns contact-details">
                 <h2>Contact Details</h2>

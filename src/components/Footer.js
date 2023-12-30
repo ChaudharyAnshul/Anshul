@@ -6,7 +6,7 @@ export const Footer = ({ data }) => {
 
   const networks = data.social.map((network) => (
     <li key={network.name}>
-      <a href={network.url}>
+      <a href={network.url} target="_blank">
         <i className={network.className}></i>
       </a>
     </li>

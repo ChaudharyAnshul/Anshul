@@ -3,8 +3,8 @@
     "name":"Anshul Chaudhary",
     "description":"An Innovator at Heart, a Visionary in Practice: My journey in technology is a vibrant tapestry of creativity and problem-solving, dedicated to crafting solutions that not only meet the needs of today but also pave the way for the future",
     "image":"profilepic.jpeg",
-    "bio1":"Hello, I'm Anshul Chaudhary, a passionate and experienced software engineer with a keen interest in Machine Learning and Data Modeling. My career in the tech industry is diverse, spanning various roles and projects, where I've developed a deep understanding of programming languages, database management, and algorithm design. Continuously enhancing my skills in modern technologies, I am currently pursuing a Master’s degree in Software Engineering Systems from Northeastern University.",
-    "bio2":"I have two years of industrial experience at JPMorgan Chase & Co., where I have notably improved trade management systems, achieving substantial gains in operational efficiency and process optimization. I thrive on challenges and am always on the lookout for new opportunities to apply my skills in developing innovative solutions. My commitment to continuous learning and growth fuels my ambition to meaningfully contribute to the tech community.",
+    "bio1": "Hello, I'm Anshul Chaudhary, a passionate and experienced software engineer with a keen interest in Machine Learning and Data Modeling. My diverse career in the tech industry spans various roles and projects, giving me a deep understanding of programming languages, database management, and algorithm design. I'm currently enhancing my skills through a Master’s degree in Software Engineering Systems at Northeastern University.",
+    "bio2": "I have two years of industrial experience at JPMorgan Chase & Co., Where I've made significant improvements in trade management systems, achieving major gains in operational efficiency and process optimization. I am constantly seeking challenges and opportunities to apply my skills in developing innovative solutions, driven by a commitment to continuous learning and a desire to make a meaningful impact in the tech community.",
     "contactmessage":"Please fill the details below and I'll contact you ASAP!",
     "email": "chaudhary.ans@northeastern.edu",
     "phone": "(857) 318-9725",
@@ -43,14 +43,14 @@
         "degree":"Master of Science, Software Engineering Systems",
         "graduated":"May 2025",
         "gpa": "4.0",
-        "description":"This program encompassed a range of subjects including advanced software engineering principles, design patterns, and data science methodologies, providing the skills necessary to address intricate software systems and data-related tasks."
+        "description":"Course Work: Concepts of Object-Oriented Design, Data Science Engineering Methods"
       },
       {
         "school":"University of Mumbai, India",
         "degree":"Bachelor of Engineering, Information Technology",
         "graduated":"March 2013",
         "gpa": "3.58",
-        "description":"The program provided a strong foundation in fundamental IT concepts, including algorithmic thinking, database management, and software principles."
+        "description":"Course Work: Data Structures & Algorithms, Web Technologies, Database Management, Software Design, Data Mining, IOT"
       }
     ],
     "work":[
@@ -58,7 +58,11 @@
         "company":"JPMorgan Chase & Co.",
         "title":"Software Engineer",
         "years":"July 2021 - July 2023",
-        "description":"Played a key role in a team at JPMorgan Chase & Co. to modernize legacy systems, enhancing high-speed booking processes and leading Python workflow redesign to boost operational efficiency by 80%. Developed a GraphQL API to cut booking execution time by 66%, onboarded and trained four team members, and resolved critical booking system issues, demonstrating expertise as a subject matter expert in two strategic platform tools."
+        "description":[
+          "Successfully collaborated on an Equity Trade Management project, focusing on the migration of a legacy system to a strategic platform, enhancing high-speed trade booking and significantly increasing operational efficiency by 80% through an automated Python workflow.",
+          "Spearheaded optimization of bulk booking processes with a GraphQL API, achieving a 66% reduction in execution time, and demonstrated expertise as a subject matter expert for key booking tools, contributing to resolving 30% of system booking issues.",
+          "Played a crucial role in team development and technological advancement, training new team members, debugging and re-engineering trade-syncing queries, and streamlining data capture across systems to reduce storage load and code redundancy."
+        ]
       }
     ],
     "skills":[
@@ -112,6 +116,11 @@
         "name": "Azure AI Fundamentals",
         "issuedOn": "May 2023",
         "link": "https://www.credly.com/badges/b099ff11-31c8-41d9-bc06-7057272a1dc4"
+      },
+      {
+        "name": "Snowflake Data Warehousing",
+        "issuedOn": "December 2023",
+        "link": "https://achieve.snowflake.com/59e18970-b9d2-445e-a6dd-75dfb9650709"
       }
     ],
     "publications": [
