@@ -130,5 +130,45 @@
         "link": "https://ieeexplore.ieee.org/document/9456440"
       }
     ]
+  },
+  "portfolio":{
+    "work": [
+      {
+        "title":"Softawre Development",
+        "description":"Design and implement innovative solutions to address complex problems and improve user experiences",
+        "image":"software-development.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      },
+      {
+        "title":"Data Science",
+        "description":"Analyze large datasets to extract meaningful insights and make data-driven decisions that drive business growth and innovation",
+        "image":"data-science.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      },
+      {
+        "title":"Prompt Engineering",
+        "description":"Craft precise and context-aware prompts to elicit desired responses from AI models and optimize their performance",
+        "image":"prompt-engineering.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      },
+      {
+        "title":"Data Pipline",
+        "description":"Build and maintain robust data pipelines, ensuring the efficient and reliable collection, processing, and storage of data",
+        "image":"data-pipeline.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      },
+      {
+        "title":"Data Visualization",
+        "description":"Create compelling and informative visual representations of data to help stakeholders gain insights & make informed decisions",
+        "image":"data-visualization.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      },
+      {
+        "title":"API Development",
+        "description":"Design, build, and maintain interfaces that enable seamless communication between different software systems",
+        "image":"api-development.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      }
+    ]
   }
 }

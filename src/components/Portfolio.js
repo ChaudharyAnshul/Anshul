@@ -1,44 +1,84 @@
-import React, { Component } from "react";
-import Zmage from "react-zmage";
-import Fade from "react-reveal";
+import React from 'react';
+import { styled } from '@mui/material/styles';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+import CardActions from '@mui/material/CardActions';
+import Collapse from '@mui/material/Collapse';
+import Typography from '@mui/material/Typography';
 
-let id = 0;
-class Portfolio extends Component {
-  render() {
-    if (!this.props.data) return null;
 
-    const projects = this.props.data.projects.map(function (projects) {
-      let projectImage = "images/portfolio/" + projects.image;
+export const Portfolio = ({ data }) => {
+  if (!data) return null;
 
-      return (
-        <div key={id++} className="columns portfolio-item">
-          <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
-            <div style={{ textAlign: "center" }}>{projects.title}</div>
+  const works = data.work.map((work) => {
+    return (
+        <Grid item xs={12} sm={12} md={6} lg={4}>
+            <BasicCard data={work}/>
+        </Grid>
+    );
+  });
+
+  return (
+    <section id="portfolio">
+      <div className="row">
+        <div className="twelve columns collapsed">
+          <h1>What I Do</h1>
+
+          <div
+            id="portfolio-wrapper"
+            className="bgrid-quarters s-bgrid-thirds cf"
+          >
+            <Box sx={{ width: '100%' }}>
+              <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                {works}
+              </Grid>
+            </Box>
           </div>
         </div>
-      );
-    });
+      </div>
+    </section>
+  );
+};
 
-    return (
-      <section id="portfolio">
-        <Fade left duration={1000} distance="40px">
-          <div className="row">
-            <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
+const BasicCard = ({data}) => {
 
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
-                {projects}
-              </div>
-            </div>
-          </div>
-        </Fade>
-      </section>
-    );
-  }
+  const imageURL = "images/portfolio/" + data.image;
+
+  const Item = styled(Card)({
+    backgroundColor: '#373233', 
+    textAlign: 'center',
+    color: '#fff',
+    minHeight: '200px',
+    minWidth: '275px',
+    letterSpacing: '1px'
+  });
+
+  return (
+    <Item>
+      <CardMedia
+        component="img"
+        height="194"
+        image={imageURL}
+        alt="Paella dish"
+      />
+      <CardContent>
+        <Typography variant="div" component="h3" sx={{color: "#fff"}}>
+          {data.title}
+        </Typography>
+        <Typography sx={{ mb: 1.5, }} color="text.secondary">
+          <br />
+        </Typography>
+        <Typography variant="h6" sx={{ color: "#999991", minHeight:50, fontSize: 18 }}>
+          {data.description}
+        </Typography>
+        <Typography sx={{mt:2, fontSize:"15px"}}>
+          <a  className="portfolio-a" href={data.url}>view <i className="fa fa-arrow-right"></i></a>
+        </Typography>
+      </CardContent>
+    </Item>
+  );
 }
-
-export default Portfolio;

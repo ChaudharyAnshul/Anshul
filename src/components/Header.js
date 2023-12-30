@@ -79,10 +79,10 @@ export const Header = ({ data }) => {
           </motion.h3>
           <hr />
           <motion.ul initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.4 }} className="social">
-            <a href={linkedIn} className="button btn project-btn" target="_blank">
+            <a href={linkedIn} className="button btn project-btn" target="_blank" rel="noreferrer">
               <i className="fa fa-linkedin"></i>LinkedIn
             </a>
-            <a href={github} className="button btn github-btn" target="_blank">
+            <a href={github} className="button btn github-btn" target="_blank" rel="noreferrer">
               <i className="fa fa-github"></i>Github
             </a>
           </motion.ul>

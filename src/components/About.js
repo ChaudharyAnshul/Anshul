@@ -5,7 +5,7 @@ export const About = ({ data }) => {
 
   if (!data) return null;
 
-  const { name, image, bio1, bio2, address, phone, email, resumedownload } = data;
+  const { name, image, bio1, bio2, address, phone, email } = data;
   const { street, city, state, zip } = address;
   const profilepic = "images/" + image;
 

@@ -5,7 +5,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Chip from '@mui/material/Chip';
-import Stack from '@mui/material/Stack';
 
 export const Resume = ({ data }) => {
 
@@ -16,7 +15,6 @@ export const Resume = ({ data }) => {
 
   if (!data) return null;
 
-  const skillmessage = data.skillmessage;
   const fadeIn = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -69,7 +67,7 @@ export const Resume = ({ data }) => {
     >
       <h3>{certification.name}</h3>
       <p className="info">
-        <span>Issued On: </span><span>{certification.issuedOn}</span> - <a href={certification.link} target="_blank">view</a>
+        <span>Issued On: </span><span>{certification.issuedOn}</span> - <a href={certification.link} target="_blank" rel="noreferrer">view</a>
       </p>
       <p>{work.description}</p>
     </motion.div>
@@ -85,7 +83,7 @@ export const Resume = ({ data }) => {
     >
       <h3>{publication.name}</h3>
       <p className="info">
-        <span>Published On: </span><span>{publication.issuedOn}</span> - <a href={publication.link} target="_blank">view</a>
+        <span>Published On: </span><span>{publication.issuedOn}</span> - <a href={publication.link} target="_blank" rel="noreferrer">view</a>
       </p>
       <p>{work.description}</p>
     </motion.div>
