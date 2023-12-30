@@ -72,10 +72,10 @@ export const Header = ({ data }) => {
       <div className="row banner">
         <div className="banner-text">
           <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }} className="responsive-headline">
-            {name}
+            I'm {name}
           </motion.h1>
           <motion.h3 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.2 }}>
-            {description}.
+            {description}
           </motion.h3>
           <hr />
           <motion.ul initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.4 }} className="social">

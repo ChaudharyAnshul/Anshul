@@ -1,7 +1,18 @@
 import React from "react";
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
 
 export const Resume = ({ data }) => {
+
+
+  const [openModal, setOpenModal] = React.useState(false);
+  const handleOpenModal = () => setOpenModal(true);
+  const handleCloseModal = () => setOpenModal(false);
 
   if (!data) return null;
 
@@ -109,12 +120,10 @@ export const Resume = ({ data }) => {
         </div>
 
         <div className="nine columns main-col">
-          <p>{skillmessage}</p>
-          
           <div className="bars">
             <ul className="skills">{skills}</ul>
-            <Tag data={data.skillsList} />
-
+            <Button onClick={handleOpenModal} sx={{'&:hover': {color: 'blue',},fontSize:'14px'}}>View &nbsp;More</Button>
+            <SkillModel data={data.skillsList} openModal={openModal} handleCloseModal={handleCloseModal} />
           </div>
 
         </div>
@@ -166,18 +175,55 @@ export const Resume = ({ data }) => {
   );
 };
 
-const Tag = ({data}) =>{
-  return (
-    <div className="container-skill">
-      {
-      data.map((skill) =>{
-        return(
-          <div key={skill} className="tag-skill">
-              {skill}
-          </div>
-        );
-      })
-      }
+const SkillModel = ({data, openModal, handleCloseModal }) =>{
+
+  const styleModal = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    width: {xs: 300, sm:400, md:600, lg:800},
+    maxHeight: {xs: 600, sm:650, md:700, lg:800},
+    overflow: 'auto',
+    transform: 'translate(-50%, -50%)',
+    bgcolor: '#FFFFF5',
+    boxShadow: 24,
+    // scrollbarWidth: 'thin',
+    // scrollbarColor: '#888 #f4f4f4',
+    p: 4,
+  };
+
+  const customStyle = {
+    margin: 5,
+    fontSize: '16px',
+    backgroundColor: '#009999',
+    color: '#E2E2C9',
+  };
+
+  return(
+    <div>
+      <Modal
+        open={openModal}
+        onClose={handleCloseModal}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={styleModal}>
+          {Object.keys(data).map((category) => (
+            <div key={category}>
+              <Typography id="modal-modal-title" sx={{fontSize: '18px'}} >
+                {category}:
+              </Typography>
+              <Typography id="modal-modal-description">
+                {data[category].map((skill, index) => (
+                  <Chip key={index} label={skill} color="primary" style={customStyle} />
+                ))}
+              </Typography>
+              <br />
+            </div>
+          ))}
+        </Box>
+      </Modal>
     </div>
   );
-}
+};
+

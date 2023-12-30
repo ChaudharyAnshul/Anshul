@@ -5,7 +5,7 @@ export const About = ({ data }) => {
 
   if (!data) return null;
 
-  const { name, image, bio, address, phone, email, resumedownload } = data;
+  const { name, image, bio1, bio2, address, phone, email, resumedownload } = data;
   const { street, city, state, zip } = address;
   const profilepic = "images/" + image;
 
@@ -32,7 +32,8 @@ export const About = ({ data }) => {
           </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
-            <p>{bio}</p>
+            <p>{bio1}</p>
+            <p>{bio2}</p>
             <div className="row">
               <div className="columns contact-details">
                 <h2>Contact Details</h2>
