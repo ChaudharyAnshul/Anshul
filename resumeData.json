@@ -1,9 +1,10 @@
 {
   "main": {
     "name":"Anshul Chaudhary",
-    "description":"Welcome to my website, where innovative software engineering meets cutting-edge data science",
+    "description":"An Innovator at Heart, a Visionary in Practice: My journey in technology is a vibrant tapestry of creativity and problem-solving, dedicated to crafting solutions that not only meet the needs of today but also pave the way for the future",
     "image":"profilepic.jpeg",
-    "bio":"Hello, I'm Anshul Chaudhary, a passionate and experienced software engineer with a keen interest in data science and machine learning. My journey in the tech industry spans across diverse roles and projects, where I've developed a deep understanding of programming languages, database management, and algorithm design. I thrive on challenges and am constantly seeking new opportunities to apply my skills in optimizing processes, developing innovative solutions, and leading teams towards success. With a commitment to continuous learning and growth, I aim to contribute meaningfully to the tech community and drive forward the boundaries of what's possible with technology.",
+    "bio1":"Hello, I'm Anshul Chaudhary, a passionate and experienced software engineer with a keen interest in Machine Learning and Data Modeling. My career in the tech industry is diverse, spanning various roles and projects, where I've developed a deep understanding of programming languages, database management, and algorithm design. Continuously enhancing my skills in modern technologies, I am currently pursuing a Master’s degree in Software Engineering Systems from Northeastern University.",
+    "bio2":"I have two years of industrial experience at JPMorgan Chase & Co., where I have notably improved trade management systems, achieving substantial gains in operational efficiency and process optimization. I thrive on challenges and am always on the lookout for new opportunities to apply my skills in developing innovative solutions. My commitment to continuous learning and growth fuels my ambition to meaningfully contribute to the tech community.",
     "contactmessage":"Please fill the details below and I'll contact you ASAP!",
     "email": "chaudhary.ans@northeastern.edu",
     "phone": "(857) 318-9725",
@@ -36,7 +37,6 @@
     ]
   },
   "resume":{
-    "skillmessage":"As a software engineer with a deep-rooted passion for technology and data science, I have honed a diverse array of skills that enable me to thrive in fast-paced, innovative environments. My expertise, rooted in a blend of programming, Data Base  and Machine learning, drives my approach to solving complex challenges with efficiency and creativity.",
     "education":[
       {
         "school":"Northeastern University, USA",
@@ -72,14 +72,14 @@
       },
       {
         "name":"SQL",
-        "level":"80%"
+        "level":"85%"
       },
       {
         "name":"Machine Learning",
         "level":"85%"
       },
       {
-        "name":"Feature Engineering",
+        "name":"React",
         "level":"80%"
       },
       {
@@ -95,7 +95,13 @@
         "level":"65%"
       }
     ],
-    "skillsList":["JavaScript", "MongoDB", "Pandas", "Scikit-learn", "Matplotlib", "TensorFlow", "BeautifulSoup", "Statistical Analysis", "Data Modeling", "Clustering", "Problem Solving", "Debugging", "Unit Testing", "Git", "Django", "Flask", "React", "React Native", "Laravel", "Spring Boot"],
+    "skillsList": {
+      "Languages & Database": ["Python", "Java", "JavaScript", "SQL", "MySQL", "MS SQL", "MongoDB"],
+      "Libraries": ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "TensorFlow", "BeautifulSoup"],
+      "Analysis": ["Machine Learning", "Feature Engineering", "Statistics Analysis", "Predictive Data Modeling", "Clustering", "Power Bi"],
+      "Software Development & Tools": ["Data Structures", "Algorithms", "GraphQL", "Debugging", "Unit Test", "Git"],
+      "Frameworks": ["Django", "Flask", "React", "React Native", "Laravel", "Spring Boot"]
+    },
     "certifications": [
       {
         "name": "Azure Data Fundamentals",

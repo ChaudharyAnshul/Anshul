@@ -65,7 +65,7 @@ header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
    color: #ddd;
    margin: 0 auto;
-   width: 70%;
+   width: 100%;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -231,7 +231,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #resume {
-   background: #fff;
+   background: #F9F9E5;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
