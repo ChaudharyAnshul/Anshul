@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
+import validator from "validator";
 
 export const Contact = ({ data }) => {
+
+  const form = useRef();
 
   if (!data) return null;
 
@@ -18,10 +22,21 @@ export const Contact = ({ data }) => {
     visible: { opacity: 1 },
   };
 
-
-  const handleChange = (event) => {
-    // Handle input changes here
-  }
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if(!validator.isEmail(form.current.contactEmail.value)){
+      alert("Please enter a valid email to hear back. Thank you!");
+    } else{
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+        .then((result) => {
+          alert("Thanks for reaching out, I'll you contact ASAP.");
+          e.target.reset();
+        }, (error) => {
+          alert("Could not send Email at the moment, please reachout on the details below. Thank you!");
+          console.log(error.text);
+        });
+    }
+  };
 
   return (
     <section id="contact">
@@ -51,7 +66,7 @@ export const Contact = ({ data }) => {
           transition={{ duration: 1 }}
           className="eight columns"
         >
-          <form action="" method="post" id="contactForm" name="contactForm">
+          <form ref={form} onSubmit={sendEmail} id="contactForm" name="contactForm">
             <fieldset>
               <div>
                 <label htmlFor="contactName">
@@ -63,7 +78,7 @@ export const Contact = ({ data }) => {
                   size="35"
                   id="contactName"
                   name="contactName"
-                  onChange={handleChange}
+                  required
                 />
               </div>
 
@@ -77,19 +92,21 @@ export const Contact = ({ data }) => {
                   size="35"
                   id="contactEmail"
                   name="contactEmail"
-                  onChange={handleChange}
+                  required
                 />
               </div>
 
               <div>
-                <label htmlFor="contactSubject">Subject</label>
+                <label htmlFor="contactSubject">
+                  Subject <span className="required">*</span>
+                </label>
                 <input
                   type="text"
                   defaultValue=""
                   size="35"
                   id="contactSubject"
                   name="contactSubject"
-                  onChange={handleChange}
+                  required
                 />
               </div>
 
@@ -102,14 +119,12 @@ export const Contact = ({ data }) => {
                   rows="15"
                   id="contactMessage"
                   name="contactMessage"
+                  required
                 ></textarea>
               </div>
 
               <div>
-                <button className="submit">Submit</button>
-                <span id="image-loader">
-                  <img alt="" src="images/loader.gif" />
-                </span>
+                <input type="submit" value="Send" className="submit"/>
               </div>
             </fieldset>
           </form>
