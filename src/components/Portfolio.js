@@ -4,19 +4,16 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 import Typography from '@mui/material/Typography';
-
 
 export const Portfolio = ({ data }) => {
   if (!data) return null;
 
+  let id = 0;
   const works = data.work.map((work) => {
     return (
-        <Grid item xs={12} sm={12} md={6} lg={4}>
+        <Grid key={id++} item xs={12} sm={12} md={6} lg={4}>
             <BasicCard data={work}/>
         </Grid>
     );

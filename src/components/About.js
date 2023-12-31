@@ -32,7 +32,11 @@ export const About = ({ data }) => {
           </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
-            <p><div>{bio1}</div><div>{bio2}</div></p>
+            <p>
+              {bio1}
+              <br />
+              {bio2}
+            </p>
             <div className="row">
               <div className="columns contact-details">
                 <h2>Contact Details</h2>
