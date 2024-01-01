@@ -25,9 +25,7 @@ export const Header = ({ data }) => {
 
   return (
     <header id="home">
-
-      {/* <ParticlesBg type="snow" num={50} color="#fff" bg={true} /> */}
-      <ParticlesBg type="custom" config={config} bg={true} />
+      {/* <ParticlesBg type="custom" config={config} bg={true} /> */}
       <nav id="nav-wrap">
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation

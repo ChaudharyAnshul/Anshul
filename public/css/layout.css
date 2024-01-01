@@ -38,6 +38,14 @@ header {
    overflow: hidden;
 }
 
+#home{
+   background-image: url('../images/home-bg.jpg'); /* Replace 'your-image-url.jpg' with the path to your image */
+   background-size: cover; /* Adjust the background image size */
+   background-repeat: no-repeat; /* Prevent background image from repeating */
+   background-position: center center;
+}
+
+
 /* vertically center banner section */
 header:before {
    content: '';
@@ -815,7 +823,6 @@ call-to-action .button {
    height: auto;
    display: inline-block;
 	border-radius: 0px;
-   margin-left: 26%;
 }
 #contact input.submit:hover {
 	color: #0D0D0D;
@@ -952,10 +959,9 @@ footer .social-links li:first-child { margin-left: 0; }
 #go-top a:hover { background-color: #0F9095; }
 
 
-.social .btn:first-child{
-   margin-right: 30px;
-}
+
 .social .btn{
+   margin: 10px;
    padding-left: 30px;
    padding-right: 30px; 
 }

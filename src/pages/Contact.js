@@ -124,6 +124,9 @@ export const Contact = ({ data }) => {
               </div>
 
               <div>
+                <label htmlFor="contactMessage">
+                  
+                </label>
                 <input type="submit" value="Send" className="submit"/>
               </div>
             </fieldset>
