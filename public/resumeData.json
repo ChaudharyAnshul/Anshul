@@ -169,6 +169,77 @@
         "image":"api-development.png",
         "url":"https://github.com/ChaudharyAnshul"
       }
-    ]
+    ],
+    "projects": {
+      "page-1": [
+        {
+          "title":"Content Management System",
+          "description":"Java Spring Boot and React-based Content Management System, similar to Canvas, enabling users (professors and students) to log in, access registered courses, and allowing professors to create quizzes, while administrators have special privileges to manage users, courses, and terms.",
+          "image":"cms.png",
+          "url":"https://github.com/ChaudharyAnshul/Content-Management-System",
+          "techStack":["java","react","mongodb"]
+        },
+        {
+          "title":"Stock Close Price Prediction",
+          "description":"Employed a comprehensive Machine Learning approach, involving data collection, preprocessing, feature selection, algorithm evaluation, tuning, and validation, to create a precise model for predicting stock closing prices, offering valuable insights for investment decisions",
+          "image":"stock-close.png",
+          "url":"https://github.com/ChaudharyAnshul/StockClosePricePrediction",
+          "techStack":["python", "jupyter"]
+        },
+        {
+          "title":"Malware Detection using ML",
+          "description":"Developed a robust desktop application and web extension using machine learning, with Random Forest for malware detection in Windows files and Logistic Regression for assessing the security of web URLs, providing advanced cybersecurity protection",
+          "image":"malware-detection.png",
+          "url":"https://github.com/ChaudharyAnshul/MalwareDetection-ML",
+          "techStack":["python", "jupyter", "csharp", "javascript"]
+        }
+      ],
+      "page-2": [
+        {
+          "title":"Customer Review Analysis",
+          "description":"Sentiment analysis on British Airways customer reviews involves data scraping, data preprocessing, data visualization, and the application of transformer-based models for sentiment classification, ultimately yielding valuable insights into customer opinions and feedback",
+          "image":"ba-review.png",
+          "url":"https://github.com/ChaudharyAnshul/BritishAirways_ReviewAnalysis",
+          "techStack":["python", "jupyter"]
+        },
+        {
+          "title":"CNN Digit Classification",
+          "description":"CNN model for digit identification using the TMNIST dataset. The model architecture includes convolutional layers for feature extraction, max-pooling layers for spatial reduction, and fully connected layers for classification. It aims to accurately classify hand-written digits (0-9)",
+          "image":"cnn-digits.png",
+          "url":"https://github.com/ChaudharyAnshul/NeuralNetwork_TMNIST",
+          "techStack":["python", "jupyter"]
+        },
+        {
+          "title":"Video Interview Website",
+          "description":"Django websites: a company website showcasing the orgs work and a web application for recording online interviews with a SQL database. The interview application offers user authentication, interview recording, and database management features for streamlined interview processes.",
+          "image":"video-interview.png",
+          "url":"https://bitbucket.org/AnshulChaudhary/interactivevideoresponse/src/master/",
+          "techStack":["django", "mysql", "html", "css"]
+        }
+      ],
+      "page-3": [
+        {
+          "title":"E-commerce Website",
+          "description":"E-commerce Website is a feature-rich platform built with the Laravel framework and a SQL database. It includes user authentication, a wide product catalog, category-based parts suggestions, dynamic cart updates, secure transactions, and responsive design",
+          "image":"ecommerce.png",
+          "url":"https://github.com/ChaudharyAnshul/Ecommerce-Website",
+          "techStack":["laravel", "html", "mysql"]
+        },
+        {
+          "title":"Flight Booking Pattern",
+          "description":"Analyzing British Airways customer booking patterns by processing and visualizing booking data. It also includes predictive modeling to uncover insights into customer behavior and preferences, potentially improving marketing strategies and enhancing customer experiences.",
+          "image":"flight-booking.png",
+          "url":"https://github.com/ChaudharyAnshul/BritishAirways_CustomerBookingPattern",
+          "techStack":["python", "jupyter"]
+        },
+        {
+          "title":"Event Management System",
+          "description":"Platform for event registration and reporting it offers user authentication and provides super admin privileges for managing departments, committees, and student bodies. The system allows faculty and selected students to register events, with a hierarchical approval process.",
+          "image":"event-management.png",
+          "url":"https://github.com/ChaudharyAnshul/Event-Management-System",
+          "techStack":["django", "javascript", "html"]
+        }
+      ]
+    }
   }
 }
