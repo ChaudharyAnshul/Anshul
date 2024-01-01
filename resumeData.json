@@ -3,8 +3,8 @@
     "name":"Anshul Chaudhary",
     "description":"An Innovator at Heart, a Visionary in Practice: My journey in technology is a vibrant tapestry of creativity and problem-solving, dedicated to crafting solutions that not only meet the needs of today but also pave the way for the future",
     "image":"profilepic.jpeg",
-    "bio1":"Hello, I'm Anshul Chaudhary, a passionate and experienced software engineer with a keen interest in Machine Learning and Data Modeling. My career in the tech industry is diverse, spanning various roles and projects, where I've developed a deep understanding of programming languages, database management, and algorithm design. Continuously enhancing my skills in modern technologies, I am currently pursuing a Master’s degree in Software Engineering Systems from Northeastern University.",
-    "bio2":"I have two years of industrial experience at JPMorgan Chase & Co., where I have notably improved trade management systems, achieving substantial gains in operational efficiency and process optimization. I thrive on challenges and am always on the lookout for new opportunities to apply my skills in developing innovative solutions. My commitment to continuous learning and growth fuels my ambition to meaningfully contribute to the tech community.",
+    "bio1": "Hello, I'm Anshul Chaudhary, a passionate and experienced software engineer with a keen interest in Machine Learning and Data Modeling. My diverse career in the tech industry spans various roles and projects, giving me a deep understanding of programming languages, database management, and algorithm design. I'm currently enhancing my skills through a Master’s degree in Software Engineering Systems at Northeastern University.",
+    "bio2": "I have two years of industrial experience at JPMorgan Chase & Co., Where I've made significant improvements in trade management systems, achieving major gains in operational efficiency and process optimization. I am constantly seeking challenges and opportunities to apply my skills in developing innovative solutions, driven by a commitment to continuous learning and a desire to make a meaningful impact in the tech community.",
     "contactmessage":"Please fill the details below and I'll contact you ASAP!",
     "email": "chaudhary.ans@northeastern.edu",
     "phone": "(857) 318-9725",
@@ -22,17 +22,22 @@
       {
         "name":"linkedin",
         "url":"https://www.linkedin.com/in/chaudharyanshul/",
-        "className":"fa fa-linkedin"
-      },
-      {
-        "name":"instagram",
-        "url":"https://www.instagram.com/anshul_218/",
-        "className":"fa fa-instagram"
+        "icon":"linkedin"
       },
       {
         "name":"github",
         "url":"https://github.com/ChaudharyAnshul",
-        "className":"fa fa-github"
+        "icon":"github"
+      },
+      {
+        "name":"kaggle",
+        "url":"https://www.kaggle.com/chaudharyanshul",
+        "icon":"kaggle"
+      },
+      {
+        "name":"instagram",
+        "url":"https://www.instagram.com/anshul_218/",
+        "icon":"instagram"
       }
     ]
   },
@@ -43,14 +48,14 @@
         "degree":"Master of Science, Software Engineering Systems",
         "graduated":"May 2025",
         "gpa": "4.0",
-        "description":"This program encompassed a range of subjects including advanced software engineering principles, design patterns, and data science methodologies, providing the skills necessary to address intricate software systems and data-related tasks."
+        "description":"Course Work: Concepts of Object-Oriented Design, Data Science Engineering Methods"
       },
       {
         "school":"University of Mumbai, India",
         "degree":"Bachelor of Engineering, Information Technology",
         "graduated":"March 2013",
         "gpa": "3.58",
-        "description":"The program provided a strong foundation in fundamental IT concepts, including algorithmic thinking, database management, and software principles."
+        "description":"Course Work: Data Structures & Algorithms, Web Technologies, Database Management, Software Design, Data Mining, IOT"
       }
     ],
     "work":[
@@ -58,7 +63,11 @@
         "company":"JPMorgan Chase & Co.",
         "title":"Software Engineer",
         "years":"July 2021 - July 2023",
-        "description":"Played a key role in a team at JPMorgan Chase & Co. to modernize legacy systems, enhancing high-speed booking processes and leading Python workflow redesign to boost operational efficiency by 80%. Developed a GraphQL API to cut booking execution time by 66%, onboarded and trained four team members, and resolved critical booking system issues, demonstrating expertise as a subject matter expert in two strategic platform tools."
+        "description":[
+          "Successfully collaborated on an Equity Trade Management project, focusing on the migration of a legacy system to a strategic platform, enhancing high-speed trade booking and significantly increasing operational efficiency by 80% through an automated Python workflow.",
+          "Spearheaded optimization of bulk booking processes with a GraphQL API, achieving a 66% reduction in execution time, and demonstrated expertise as a subject matter expert for key booking tools, contributing to resolving 30% of system booking issues.",
+          "Played a crucial role in team development and technological advancement, training new team members, debugging and re-engineering trade-syncing queries, and streamlining data capture across systems to reduce storage load and code redundancy."
+        ]
       }
     ],
     "skills":[
@@ -112,6 +121,17 @@
         "name": "Azure AI Fundamentals",
         "issuedOn": "May 2023",
         "link": "https://www.credly.com/badges/b099ff11-31c8-41d9-bc06-7057272a1dc4"
+      },
+      {
+        "name": "Azure Fundamentals",
+        "issuedOn": "May 2023",
+        "link": "https://www.credly.com/badges/3aa7f6c6-15f3-4f28-93e8-b076292cb2f1"
+        
+      },
+      {
+        "name": "Snowflake Data Warehousing",
+        "issuedOn": "December 2023",
+        "link": "https://achieve.snowflake.com/59e18970-b9d2-445e-a6dd-75dfb9650709"
       }
     ],
     "publications": [
@@ -120,6 +140,129 @@
         "issuedOn": "June 2021",
         "link": "https://ieeexplore.ieee.org/document/9456440"
       }
+    ],
+    "activities": [
+      {
+        "name": "ISTE-VESIT: Student Chapter",
+        "title":"Chief Technical Officer",
+        "years":"September 2019 - May 2021",
+        "description":[
+          "Led a 20-member council in organizing technical workshops and events, effectively delegating tasks and ensuring project success.",
+          "Hosted and coordinated workshops on various technical topics, attracting over 100 attendees to each event through meticulous planning and execution.",
+          "Demonstrated adaptability and problem-solving skills by overcoming challenges during events and consistently achieving high attendee satisfaction."
+        ]
+      }
     ]
+  },
+  "portfolio":{
+    "work": [
+      {
+        "title":"Softawre Development",
+        "description":"Design and implement innovative solutions to address complex problems and improve user experiences",
+        "image":"software-development.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      },
+      {
+        "title":"Data Science",
+        "description":"Analyze large datasets to extract meaningful insights and make data-driven decisions that drive business growth and innovation",
+        "image":"data-science.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      },
+      {
+        "title":"Prompt Engineering",
+        "description":"Craft precise and context-aware prompts to elicit desired responses from AI models and optimize their performance",
+        "image":"prompt-engineering.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      },
+      {
+        "title":"Data Pipline",
+        "description":"Build and maintain robust data pipelines, ensuring the efficient and reliable collection, processing, and storage of data",
+        "image":"data-pipeline.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      },
+      {
+        "title":"Data Visualization",
+        "description":"Create compelling and informative visual representations of data to help stakeholders gain insights & make informed decisions",
+        "image":"data-visualization.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      },
+      {
+        "title":"API Development",
+        "description":"Design, build, and maintain interfaces that enable seamless communication between different software systems",
+        "image":"api-development.png",
+        "url":"https://github.com/ChaudharyAnshul"
+      }
+    ],
+    "projects": {
+      "page-1": [
+        {
+          "title":"Content Management System",
+          "description":"Java Spring Boot and React-based Content Management System, similar to Canvas, enabling users (professors and students) to log in, access registered courses, and allowing professors to create quizzes, while administrators have special privileges to manage users, courses, and terms.",
+          "image":"cms.png",
+          "url":"https://github.com/ChaudharyAnshul/Content-Management-System",
+          "techStack":["java","react","mongodb"]
+        },
+        {
+          "title":"Stock Close Price Prediction",
+          "description":"Employed a comprehensive Machine Learning approach, involving data collection, preprocessing, feature selection, algorithm evaluation, tuning, and validation, to create a precise model for predicting stock closing prices, offering valuable insights for investment decisions",
+          "image":"stock-close.png",
+          "url":"https://github.com/ChaudharyAnshul/StockClosePricePrediction",
+          "techStack":["python", "jupyter"]
+        },
+        {
+          "title":"Malware Detection using ML",
+          "description":"Developed a robust desktop application and web extension using machine learning, with Random Forest for malware detection in Windows files and Logistic Regression for assessing the security of web URLs, providing advanced cybersecurity protection",
+          "image":"malware-detection.png",
+          "url":"https://github.com/ChaudharyAnshul/MalwareDetection-ML",
+          "techStack":["python", "jupyter", "csharp", "javascript"]
+        }
+      ],
+      "page-2": [
+        {
+          "title":"Customer Review Analysis",
+          "description":"Sentiment analysis on British Airways customer reviews involves data scraping, data preprocessing, data visualization, and the application of transformer-based models for sentiment classification, ultimately yielding valuable insights into customer opinions and feedback",
+          "image":"ba-review.png",
+          "url":"https://github.com/ChaudharyAnshul/BritishAirways_ReviewAnalysis",
+          "techStack":["python", "jupyter"]
+        },
+        {
+          "title":"CNN Digit Classification",
+          "description":"CNN model for digit identification using the TMNIST dataset. The model architecture includes convolutional layers for feature extraction, max-pooling layers for spatial reduction, and fully connected layers for classification. It aims to accurately classify hand-written digits (0-9)",
+          "image":"cnn-digits.png",
+          "url":"https://github.com/ChaudharyAnshul/NeuralNetwork_TMNIST",
+          "techStack":["python", "jupyter"]
+        },
+        {
+          "title":"Video Interview Website",
+          "description":"Django websites: a company website showcasing the orgs work and a web application for recording online interviews with a SQL database. The interview application offers user authentication, interview recording, and database management features for streamlined interview processes.",
+          "image":"video-interview.png",
+          "url":"https://bitbucket.org/AnshulChaudhary/interactivevideoresponse/src/master/",
+          "techStack":["django", "mysql", "html", "css"]
+        }
+      ],
+      "page-3": [
+        {
+          "title":"E-commerce Website",
+          "description":"E-commerce Website is a feature-rich platform built with the Laravel framework and a SQL database. It includes user authentication, a wide product catalog, category-based parts suggestions, dynamic cart updates, secure transactions, and responsive design",
+          "image":"ecommerce.png",
+          "url":"https://github.com/ChaudharyAnshul/Ecommerce-Website",
+          "techStack":["laravel", "html", "mysql"]
+        },
+        {
+          "title":"Flight Booking Pattern",
+          "description":"Analyzing British Airways customer booking patterns by processing and visualizing booking data. It also includes predictive modeling to uncover insights into customer behavior and preferences, potentially improving marketing strategies and enhancing customer experiences.",
+          "image":"flight-booking.png",
+          "url":"https://github.com/ChaudharyAnshul/BritishAirways_CustomerBookingPattern",
+          "techStack":["python", "jupyter"]
+        },
+        {
+          "title":"Event Management System",
+          "description":"Platform for event registration and reporting it offers user authentication and provides super admin privileges for managing departments, committees, and student bodies. The system allows faculty and selected students to register events, with a hierarchical approval process.",
+          "image":"event-management.png",
+          "url":"https://github.com/ChaudharyAnshul/Event-Management-System",
+          "techStack":["django", "javascript", "html"]
+        }
+      ]
+    }
   }
 }
