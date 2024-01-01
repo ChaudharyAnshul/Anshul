@@ -22,17 +22,22 @@
       {
         "name":"linkedin",
         "url":"https://www.linkedin.com/in/chaudharyanshul/",
-        "className":"fa fa-linkedin"
-      },
-      {
-        "name":"instagram",
-        "url":"https://www.instagram.com/anshul_218/",
-        "className":"fa fa-instagram"
+        "icon":"linkedin"
       },
       {
         "name":"github",
         "url":"https://github.com/ChaudharyAnshul",
-        "className":"fa fa-github"
+        "icon":"github"
+      },
+      {
+        "name":"kaggle",
+        "url":"https://www.kaggle.com/chaudharyanshul",
+        "icon":"kaggle"
+      },
+      {
+        "name":"instagram",
+        "url":"https://www.instagram.com/anshul_218/",
+        "icon":"instagram"
       }
     ]
   },
@@ -118,6 +123,12 @@
         "link": "https://www.credly.com/badges/b099ff11-31c8-41d9-bc06-7057272a1dc4"
       },
       {
+        "name": "Azure Fundamentals",
+        "issuedOn": "May 2023",
+        "link": "https://www.credly.com/badges/3aa7f6c6-15f3-4f28-93e8-b076292cb2f1"
+        
+      },
+      {
         "name": "Snowflake Data Warehousing",
         "issuedOn": "December 2023",
         "link": "https://achieve.snowflake.com/59e18970-b9d2-445e-a6dd-75dfb9650709"
@@ -128,6 +139,18 @@
         "name": "Detecting Malware, Malicious URLs and Virus Using Machine Learning and Signature Matching",
         "issuedOn": "June 2021",
         "link": "https://ieeexplore.ieee.org/document/9456440"
+      }
+    ],
+    "activities": [
+      {
+        "name": "ISTE-VESIT: Student Chapter",
+        "title":"Chief Technical Officer",
+        "years":"September 2019 - May 2021",
+        "description":[
+          "Led a 20-member council in organizing technical workshops and events, effectively delegating tasks and ensuring project success.",
+          "Hosted and coordinated workshops on various technical topics, attracting over 100 attendees to each event through meticulous planning and execution.",
+          "Demonstrated adaptability and problem-solving skills by overcoming challenges during events and consistently achieving high attendee satisfaction."
+        ]
       }
     ]
   },

@@ -52,7 +52,7 @@ export const Resume = ({ data }) => {
         <span>&bull;</span> <em className="date">{work.years}</em>
       </p>
       {work.description.map((workItem, index) => (
-        <div key={index}>{workItem}</div>
+        <div key={index}><span>&bull;</span> {workItem}</div>
       ))}
     </motion.div>
   ));
@@ -85,7 +85,25 @@ export const Resume = ({ data }) => {
       <p className="info">
         <span>Published On: </span><span>{publication.issuedOn}</span> - <a href={publication.link} target="_blank" rel="noreferrer">view</a>
       </p>
-      <p>{work.description}</p>
+    </motion.div>
+  ));
+
+  const activities = data.activities.map((activity) => (
+    <motion.div
+      key={activity.name}
+      initial="hidden"
+      animate="visible"
+      variants={fadeIn}
+      transition={{ duration: 1 }}
+    >
+      <h3>{activity.name}</h3>
+      <p className="info">
+        {activity.title}
+        <span>&bull;</span> <em className="date">{activity.years}</em>
+      </p>
+      {activity.description.map((activityItem, index) => (
+        <div key={index}><span>&bull;</span> {activityItem}</div>
+      ))}
     </motion.div>
   ));
 
@@ -169,6 +187,16 @@ export const Resume = ({ data }) => {
         </div>
 
         <div className="nine columns main-col">{publications}</div>
+      </div>
+
+      <div className="row activities">
+        <div className="three columns header-col">
+          <h1>
+            <span>Activities</span>
+          </h1>
+        </div>
+
+        <div className="nine columns main-col">{activities}</div>
       </div>
 
     </section>

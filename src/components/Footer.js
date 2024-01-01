@@ -1,16 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { getIconByString } from './components/IconPicker';
 
 export const Footer = ({ data }) => {
   if (!data) return null;
 
-  const networks = data.social.map((network) => (
-    <li key={network.name}>
-      <a href={network.url} target="_blank" rel="noreferrer">
-        <i className={network.className}></i>
-      </a>
-    </li>
-  ));
+  const networks = data.social.map((network) => {
+
+    const iconComponent = getIconByString(network.icon);
+    return(
+      <li key={network.name}>
+        <a href={network.url} target="_blank" rel="noreferrer">
+          {iconComponent}
+        </a>
+      </li>
+    );
+  });
 
   const fadeIn = {
     hidden: { opacity: 0 },

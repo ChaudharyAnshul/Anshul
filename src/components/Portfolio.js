@@ -93,7 +93,7 @@ const WorkCard = ({data}) => {
           {data.description}
         </Typography>
         <Typography sx={{mt:2, fontSize:"15px"}}>
-          <a  className="portfolio-a" href={data.url}>view <i className="fa fa-arrow-right"></i></a>
+          <a  className="portfolio-a" href={data.url} target="_blank" rel="noreferrer">view <i className="fa fa-arrow-right"></i></a>
         </Typography>
       </CardContent>
     </Item>

@@ -201,7 +201,6 @@ ul#nav li.current a { color: #fe6928; }
    color: #ccc;
 }
 #about .profile-pic {
-   position: relative;
    width: 120px;
    height: 120px;
    border-radius: 100%;
@@ -224,6 +223,21 @@ ul#nav li.current a { color: #fe6928; }
    margin-right: 15px;
    font-size: 20px;
 }
+
+.socials .social-links {
+   margin: 0px 0 0px 0;
+   padding: 0;
+   font-size: 30px;
+}
+.socials .social-links li {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+   margin-left: 42px;
+   color: #F06000;
+}
+
+.socials .social-links li:first-child { margin-left: 0; }
 
 
 /* ------------------------------------------------------------------ */
@@ -256,11 +270,12 @@ ul#nav li.current a { color: #fe6928; }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
-.education, .work, .skill, .certification {
+.education, .work, .skill, .certification, .publications, .activities {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
+
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
@@ -462,9 +477,14 @@ ul#nav li.current a { color: #fe6928; }
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.portfolio-item .item-wrap a {
+
+.portfolio-a{
    display: block;
    cursor: pointer;
+}
+
+.portfolio-a:visited {
+   color: #11ABB0;
 }
 
 .portfolio-a:hover { color: #0762f9; }
