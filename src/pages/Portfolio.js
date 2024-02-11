@@ -8,10 +8,6 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabPanel from '@mui/lab/TabPanel';
-import Tabs from '@mui/material/Tabs';
 import IconButton from '@mui/material/IconButton';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from '@mui/material';
@@ -21,12 +17,21 @@ import { getIconByString } from './components/IconPicker';
 export const Portfolio = ({ data }) => {
   if (!data) return null;
 
-  let id = 0;
+  let id1 = 0;
   const works = data.work.map((work) => {
     return (
-        <Grid key={id++} item xs={12} sm={12} md={6} lg={4}>
+        <Grid key={id1++} item xs={12} sm={6} md={3} lg={3}>
             <WorkCard data={work}/>
         </Grid>
+    );
+  });
+
+  let id2 = 0;
+  const projects = data.projects.map((project) =>{
+    return (
+      <Grid key={id2++} item xs={12} sm={12} md={6} lg={4}>
+          <ProjectCard data={project}/>
+      </Grid>
     );
   });
 
@@ -34,8 +39,19 @@ export const Portfolio = ({ data }) => {
     <section id="portfolio">
       <div className="row">
         <div className="twelve columns collapsed">
+          <h1>Project</h1>
+          <div
+            id="portfolio-wrapper"
+            className="bgrid-quarters s-bgrid-thirds cf"
+          >
+            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+              {projects}
+            </Grid>  
+            {/* <ProjectTabs data={data.projects} /> */}
+          </div>
+        </div>
+        <div className="twelve columns collapsed" style={{ marginTop: "70px" }}> 
           <h1>What I Do</h1>
-
           <div
             id="portfolio-wrapper"
             className="bgrid-quarters s-bgrid-thirds cf"
@@ -45,15 +61,6 @@ export const Portfolio = ({ data }) => {
                 {works}
               </Grid>
             </Box>
-          </div>
-        </div>
-        <div className="twelve columns collapsed" style={{ marginTop: "70px" }}>
-          <h1>Project</h1>
-          <div
-            id="portfolio-wrapper"
-            className="bgrid-quarters s-bgrid-thirds cf"
-          >
-            <ProjectTabs data={data.projects} />
           </div>
         </div>
       </div>
@@ -69,9 +76,9 @@ const WorkCard = ({data}) => {
     backgroundColor: '#373233', 
     textAlign: 'center',
     color: '#fff',
-    minHeight: '200px',
-    minWidth: '275px',
-    letterSpacing: '1px'
+    minWidth: '240px',
+    letterSpacing: '1px',
+    margin: '10px'
   });
 
   return (
@@ -93,86 +100,10 @@ const WorkCard = ({data}) => {
           {data.description}
         </Typography>
         <Typography sx={{mt:2, fontSize:"15px"}}>
-          <a  className="portfolio-a" href={data.url} target="_blank" rel="noreferrer">view <i className="fa fa-arrow-right"></i></a>
+          <a  className="portfolio-a" href={data.url} target="_blank" rel="noreferrer">work <i className="fa fa-arrow-right"></i></a>
         </Typography>
       </CardContent>
     </Item>
-  );
-}
-
-const ProjectTabs = ({data}) => {
-  const [value, setValue] = React.useState('1');
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  const isTabSelected = (tabValue) => tabValue === value;
-
-  const tabStyle = (tabValue) => ({
-    width: '20px',
-    height: '20px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: "18px",
-    color: isTabSelected(tabValue) ? 'white' : 'black',
-    backgroundColor: isTabSelected(tabValue) ? '#EEEED0' : '#373233',
-    padding: "0px",
-    margin:  "0 10px 0 10px",
-    outline: null
-  });
-
-  const tabPanels = Object.keys(data).map((page, pageIndex) => {
-    let pageId = "" + (pageIndex+1);
-    return (
-      <TabPanel key={pageId} value={pageId}>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          {
-            data[page].map((project, projectIndex) => {
-              return (
-                <Grid key={projectIndex} item xs={12} sm={12} md={6} lg={4}>
-                  <ProjectCard data={project}/>
-                </Grid>
-              );
-            })
-          }
-        </Grid>
-      </TabPanel>
-    );
-  });
-
-  const tabs = Object.keys(data).map((page, pageIndex) => {
-    let pageId = "" + (pageIndex+1);
-    return (
-      <Tab key={pageId} value={pageId} label={pageId} sx={tabStyle({pageId})} />
-    );
-  });
-
-  return (
-    <Box 
-    sx={{
-      width: '100%',
-      textAlign: 'center', // Center content horizontally
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center', // Center content vertically
-      justifyContent: 'center', // Center content vertically
-      color: '#fff', // Change text color for this tab
-      fontSize: "18px"
-    }}
-    >
-      <TabContext value={value}>
-        {tabPanels}
-        <Tabs
-          value={value}
-          onChange={handleChange}
-        >
-          {tabs}
-        </Tabs>
-        
-      </TabContext>
-    </Box>
   );
 }
 
@@ -184,7 +115,8 @@ const ProjectCard = ({ data }) => {
     color: '#fff',
     minHeight: '200px',
     minWidth: '275px',
-    letterSpacing: '1px'
+    letterSpacing: '1px',
+    margin:"5px"
   });
 
   const LeftIcon = styled(IconButton)({
