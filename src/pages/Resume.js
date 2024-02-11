@@ -1,18 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import Chip from '@mui/material/Chip';
 
 export const Resume = ({ data }) => {
-
-
-  const [openModal, setOpenModal] = React.useState(false);
-  const handleOpenModal = () => setOpenModal(true);
-  const handleCloseModal = () => setOpenModal(false);
 
   if (!data) return null;
 
