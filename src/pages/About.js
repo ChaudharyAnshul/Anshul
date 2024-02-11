@@ -8,7 +8,7 @@ export const About = ({ data }) => {
 
   if (!data) return null;
 
-  const { image, bio1, bio2, bio3, address, phone, email, portfolio, degree } = data;
+  const { image, bio1, bio2, bio3, address, phone, email, /*portfolio,*/ degree } = data;
   const { city, state } = address;
   const profilepic = "images/" + image;
 
@@ -108,7 +108,7 @@ export const About = ({ data }) => {
                       justifyContent: 'left',
                     }}>
                     <a href="#resume"><button style={{borderRadius:'20px', margin: '10px'}}>Resume</button></a>
-                    <a href="#contact"><button style={{borderRadius:'20px', margin: '10px'}}>Hier Me</button></a>
+                    <a href="#contact"><button style={{borderRadius:'20px', margin: '10px'}}>Hire Me</button></a>
                   </Typography>
                 </Grid>
                 <Grid item xs={12} sm={12} md={6}>
