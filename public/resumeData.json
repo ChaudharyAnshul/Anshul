@@ -3,18 +3,19 @@
     "name":"Anshul Chaudhary",
     "description":"An Innovator at Heart, a Visionary in Practice: My journey in technology is a vibrant tapestry of creativity and problem-solving, dedicated to crafting solutions that not only meet the needs of today but also pave the way for the future",
     "image":"profilepic.jpeg",
-    "bio1": "Hello, I'm Anshul Chaudhary, a passionate and experienced software engineer with a keen interest in Machine Learning and Data Modeling. My diverse career in the tech industry spans various roles and projects, giving me a deep understanding of programming languages, database management, and algorithm design. I'm currently enhancing my skills through a Master’s degree in Software Engineering Systems at Northeastern University.",
-    "bio2": "I have two years of industrial experience at JPMorgan Chase & Co., Where I've made significant improvements in trade management systems, achieving major gains in operational efficiency and process optimization. I am constantly seeking challenges and opportunities to apply my skills in developing innovative solutions, driven by a commitment to continuous learning and a desire to make a meaningful impact in the tech community.",
+    "bio1": "Hello, I'm Anshul Chaudhary, a passionate software engineer with a keen interest in Data Engineering and Anslysis. With diverse roles and projects in the tech industry, I've gained deep insights into programming languages and algorithm design. Currently pursuing a Master’s in Software Engineering Systems at Northeastern University to enhance my skills further.",
+    "bio2": "At JPMorgan Chase & Co., I spent two years migrating trade management systems, resulting in significant gains in operational efficiency. Constantly seeking challenges, I'm driven by a commitment to continuous learning and innovation. I thrive on developing innovative solutions and making a meaningful impact in the tech community. With a desire to tackle new challenges head-on, I'm excited about the opportunities ahead.",
     "contactmessage":"Please fill the details below and I'll contact you ASAP!",
     "email": "chaudhary.ans@northeastern.edu",
     "phone": "(857) 318-9725",
     "github":"https://github.com/ChaudharyAnshul",
     "linkedIn":"https://www.linkedin.com/in/chaudharyanshul/",
+    "portfolio": "",
+    "degree": "M.S",
     "address":{
-      "street":"Boston",
-      "city":"MA",
-      "state":"USA",
-      "zip": ""
+      "city":"Boston",
+      "state":"MA",
+      "country":"USA"
     },
     "social":[
       {
@@ -36,6 +37,28 @@
         "name":"instagram",
         "url":"https://www.instagram.com/anshul_218/",
         "icon":"instagram"
+      }
+    ],
+    "topSkills":[
+      {
+        "name":"Python",
+        "level":"90%"
+      },
+      {
+        "name":"Java",
+        "level":"85%"
+      },
+      {
+        "name":"SQL",
+        "level":"85%"
+      },
+      {
+        "name":"Machine Learning",
+        "level":"85%"
+      },
+      {
+        "name":"React",
+        "level":"80%"
       }
     ]
   },
@@ -145,9 +168,8 @@
         "title":"Chief Technical Officer",
         "years":"September 2019 - May 2021",
         "description":[
-          "Led a 20-member council in organizing technical workshops and events, effectively delegating tasks and ensuring project success.",
-          "Hosted and coordinated workshops on various technical topics, attracting over 100 attendees to each event through meticulous planning and execution.",
-          "Demonstrated adaptability and problem-solving skills by overcoming challenges during events and consistently achieving high attendee satisfaction."
+          "Led and made crucial decisions in the technical domain for the council, driving strategic initiatives and managed a team of 20 Council members, fostering collaboration ensuring alignment with organizational goals",
+          "Organized dynamic workshops on diverse technical topics, including Python, web development, ML, and big data, attracting and engaging over 100 attendees"
         ]
       }
     ]
