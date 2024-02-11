@@ -45,19 +45,19 @@
         "level":"90%"
       },
       {
-        "name":"Java",
-        "level":"85%"
-      },
-      {
         "name":"SQL",
         "level":"85%"
       },
       {
-        "name":"Machine Learning",
+        "name":"React",
         "level":"85%"
       },
       {
-        "name":"React",
+        "name":"ETL",
+        "level":"85%"
+      },
+      {
+        "name":"Machine Learning",
         "level":"80%"
       }
     ]
@@ -69,14 +69,14 @@
         "degree":"Master of Science, Software Engineering Systems",
         "graduated":"May 2025",
         "gpa": "4.0",
-        "description":"Course Work: Concepts of Object-Oriented Design, Data Science Engineering Methods"
+        "description":"Course Work: Concepts of Object-Oriented Design, Data Science Engineering Methods, Big Data, Algorithms"
       },
       {
         "school":"University of Mumbai, India",
         "degree":"Bachelor of Engineering, Information Technology",
         "graduated":"March 2013",
         "gpa": "3.58",
-        "description":"Course Work: Data Structures & Algorithms, Web Technologies, Database Management, Software Design, Data Mining, IOT"
+        "description":"Course Work: Data Structures, Web Technologies, Database Management, Software Design, Data Mining, IOT, Linux"
       }
     ],
     "work":[
@@ -85,54 +85,32 @@
         "title":"Software Engineer",
         "years":"July 2021 - July 2023",
         "description":[
-          "Successfully collaborated on an Equity Trade Management project, focusing on the migration of a legacy system to a strategic platform, enhancing high-speed trade booking and significantly increasing operational efficiency by 80% through an automated Python workflow.",
-          "Spearheaded optimization of bulk booking processes with a GraphQL API, achieving a 66% reduction in execution time, and demonstrated expertise as a subject matter expert for key booking tools, contributing to resolving 30% of system booking issues.",
-          "Played a crucial role in team development and technological advancement, training new team members, debugging and re-engineering trade-syncing queries, and streamlining data capture across systems to reduce storage load and code redundancy."
+          "Orchestrated strategic migration of legacy system for Equity Trade Management.",
+          "Spearheaded Python workflow, achieving an 80% increase in operational efficiency through automation, rigorous system checks, and optimization of user permissions.",
+          "Implemented GraphQL API, reducing execution time and improving bulk booking actions by 66%. Additionally, demonstrated expertise in two booking tools, contributing to fine-tuned operations and critical platform validation."
         ]
       }
     ],
-    "skills":[
-      {
-        "name":"Python",
-        "level":"90%"
-      },
-      {
-        "name":"Java",
-        "level":"85%"
-      },
-      {
-        "name":"SQL",
-        "level":"85%"
-      },
-      {
-        "name":"Machine Learning",
-        "level":"85%"
-      },
-      {
-        "name":"React",
-        "level":"80%"
-      },
-      {
-        "name":"Data Structures & Algorithms",
-        "level":"80%"
-      },
-      {
-        "name":"Power Bi",
-        "level":"70%"
-      },
-      {
-        "name":"Apache Airflow",
-        "level":"65%"
-      }
-    ],
     "skillsList": {
-      "Languages & Database": ["Python", "Java", "JavaScript", "SQL", "MySQL", "MS SQL", "MongoDB"],
-      "Libraries": ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "TensorFlow", "BeautifulSoup"],
-      "Analysis": ["Machine Learning", "Feature Engineering", "Statistics Analysis", "Predictive Data Modeling", "Clustering", "Power Bi"],
-      "Software Development & Tools": ["Data Structures", "Algorithms", "GraphQL", "Debugging", "Unit Test", "Git"],
-      "Frameworks": ["Django", "Flask", "React", "React Native", "Laravel", "Spring Boot"]
+      "Programing Languages": "Python, Java, JavaScript, SQL, HTML, CSS",
+      "Databases": "MySQL, MS SQL, MongoDB",
+      "Frameworks": "Django, Flask, React, Spring Boot, Docker, Kafka, Airflow, Streamlit",
+      "Skills": "Data Structures, Algorithms, GraphQL, Rest API,  Debugging, Unit Test, Git",
+      "Cloud Technologies": "Snowflake, Azure, AWS S3, AWS DynamoDB, AWS EC2",
+      "Libraries": "Pandas, NumPy, Scikit-learn, Matplotlib, TensorFlow, BeautifulSoup, Presidio",
+      "Analysis": "Machine Learning, Feature Engineering, Predictive Modeling, Classification, ETL, Power Bi"
     },
     "certifications": [
+      {
+        "name": "Snowflake Data Lake Warehouse",
+        "issuedOn": "January 2024",
+        "link": "https://achieve.snowflake.com/be2f069f-a785-434e-8edc-e2eb2a67df7e"
+      },
+      {
+        "name": "Snowflake Data Warehousing",
+        "issuedOn": "December 2023",
+        "link": "https://achieve.snowflake.com/59e18970-b9d2-445e-a6dd-75dfb9650709"
+      },
       {
         "name": "Azure Data Fundamentals",
         "issuedOn": "May 2023",
@@ -148,11 +126,6 @@
         "issuedOn": "May 2023",
         "link": "https://www.credly.com/badges/3aa7f6c6-15f3-4f28-93e8-b076292cb2f1"
         
-      },
-      {
-        "name": "Snowflake Data Warehousing",
-        "issuedOn": "December 2023",
-        "link": "https://achieve.snowflake.com/59e18970-b9d2-445e-a6dd-75dfb9650709"
       }
     ],
     "publications": [

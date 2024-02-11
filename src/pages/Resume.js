@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Chip from '@mui/material/Chip';
@@ -27,6 +28,7 @@ export const Resume = ({ data }) => {
       animate="visible"
       variants={fadeIn}
       transition={{ duration: 1 }}
+      className="education-section"
     >
       <h3>{education.school}</h3>
       <p className="info">
@@ -107,29 +109,24 @@ export const Resume = ({ data }) => {
     </motion.div>
   ));
 
-  const skills = data.skills.map((skills) => {
-    const backgroundColor = "#009999";
-    const className = "bar-expand " + skills.name.toLowerCase();
-    const width = skills.level;
-
+  const skills = Object.keys(data.skillsList).map((category) => {
     return (
-      <motion.li
-        key={skills.name}
-        initial="hidden"
-        animate="visible"
-        variants={fadeIn}
-        transition={{ duration: 1 }}
-      >
-        <em>{skills.name}</em>
-        <span style={{ width, backgroundColor }} className={className}></span>
-      </motion.li>
+      <div><b>{category}</b>: {data.skillsList[category]}</div> 
     );
   });
 
   return (
     <section id="resume">
-
-      <div className="row skill">
+      <Grid container justify="center">
+        <Grid item xs={12}>
+          <b>
+            <Typography align="center" sx={{fontSize: '36px'}}>
+              RESUME
+            </Typography>
+          </b>
+        </Grid>
+      </Grid>
+      <div className="row skill" style={{ marginTop: '30px' }}>
         <div className="three columns header-col">
           <h1>
             <span>Skills</span>
@@ -138,12 +135,7 @@ export const Resume = ({ data }) => {
         </div>
 
         <div className="nine columns main-col">
-          <div className="bars">
-            <ul className="skills">{skills}</ul>
-            <Button onClick={handleOpenModal} sx={{'&:hover': {color: 'blue',},fontSize:'14px'}}>View &nbsp;More</Button>
-            <SkillModel data={data.skillsList} openModal={openModal} handleCloseModal={handleCloseModal} />
-          </div>
-
+            {skills}
         </div>
       </div>
 
@@ -202,56 +194,3 @@ export const Resume = ({ data }) => {
     </section>
   );
 };
-
-const SkillModel = ({data, openModal, handleCloseModal }) =>{
-
-  const styleModal = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    width: {xs: 300, sm:400, md:600, lg:800},
-    maxHeight: {xs: 600, sm:650, md:700, lg:800},
-    overflow: 'auto',
-    transform: 'translate(-50%, -50%)',
-    bgcolor: '#FFFFF5',
-    boxShadow: 24,
-    // scrollbarWidth: 'thin',
-    // scrollbarColor: '#888 #f4f4f4',
-    p: 4,
-  };
-
-  const customStyle = {
-    margin: 5,
-    fontSize: '16px',
-    backgroundColor: '#009999',
-    color: '#E2E2C9',
-  };
-
-  return(
-    <div>
-      <Modal
-        open={openModal}
-        onClose={handleCloseModal}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={styleModal}>
-          {Object.keys(data).map((category) => (
-            <div key={category}>
-              <Typography id="modal-modal-title" sx={{fontSize: '18px'}} >
-                {category}:
-              </Typography>
-              <Typography id="modal-modal-description">
-                {data[category].map((skill, index) => (
-                  <Chip key={index} label={skill} color="primary" style={customStyle} />
-                ))}
-              </Typography>
-              <br />
-            </div>
-          ))}
-        </Box>
-      </Modal>
-    </div>
-  );
-};
-
